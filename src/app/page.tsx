@@ -1,3 +1,5 @@
+import style from "./page.module.sass";
+
 export default function Home() {
-  return <main></main>;
+  return <main className={style.main}></main>;
 }
