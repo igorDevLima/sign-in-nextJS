@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Ubuntu } from "next/font/google";
 import "./global.sass";
 
-const inter = Inter({ subsets: ["latin"] });
+const ubunto = Ubuntu({
+  weight: ["400", "500", "700"],
+  display: "swap",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Sign In - Lima",
@@ -16,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={ubunto.className}>{children}</body>
     </html>
   );
 }
