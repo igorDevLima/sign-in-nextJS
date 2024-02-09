@@ -1,5 +1,5 @@
-import style from "./index.module.sass";
+import styles from "./index.module.sass";
 
 export default function SpinnerLoader() {
-  return <div className={style.loader}></div>;
+  return <div className={styles.loader}></div>;
 }
