@@ -1,16 +1,13 @@
-import React from "react";
-
 //Components
-import Button from "../Button";
-import Input from "../Input";
+import Button from "../../components/Button";
+import Input from "../../components/Input";
 
 //Icons
 import { MdLocationCity } from "react-icons/md";
 
-
 type Props = {};
 
-function AddressSignUpForm({}: Props) {
+export default function AddressSignUpPage() {
   return (
     <form action="">
       <Input
@@ -26,5 +23,3 @@ function AddressSignUpForm({}: Props) {
     </form>
   );
 }
-
-export default AddressSignUpForm;

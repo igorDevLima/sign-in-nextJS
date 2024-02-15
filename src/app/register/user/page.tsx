@@ -1,8 +1,8 @@
 import React from "react";
 
 //Components
-import Button from "../Button";
-import Input from "../Input";
+import Button from "../../components/Button";
+import Input from "../../components/Input";
 
 //Icons
 import { MdAttachEmail } from "react-icons/md";
@@ -10,9 +10,7 @@ import { MdOutlineAccountCircle } from "react-icons/md";
 import { IoMdLock } from "react-icons/io";
 import { MdLocalPhone } from "react-icons/md";
 
-type Props = {};
-
-function UserSignUpForm({}: Props) {
+export default function UserSignUpPage() {
   return (
     <form action="">
       <Input
@@ -39,5 +37,3 @@ function UserSignUpForm({}: Props) {
     </form>
   );
 }
-
-export default UserSignUpForm;
