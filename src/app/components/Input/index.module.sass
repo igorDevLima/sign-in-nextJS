@@ -3,15 +3,15 @@
 
 .container
     width: 100%
-    @mixin flex($direction: column, $align:flex-start,$justify:flex-start)
+    @include flex($direction: column, $align:flex-start,$justify:flex-start)
     gap: 2px
     color: rgba(255, 255, 255,0.95)
     opacity: 0.7
 
 
     .inputContainer
-        @mixin flex($direction: column,$justify:space-between)
         width: 100%
+        @include flex( $justify:flex-start)
         
         .icon
             position: absolute
