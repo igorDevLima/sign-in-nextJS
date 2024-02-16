@@ -1,6 +1,5 @@
+@import './styles/mixins.sass'
+
 .main
-  display: flex
-  flex-direction: column
-  justify-content: flex-start
-  align-items: flex-start
+  @include flex($direction:column , $align: flex-start, $justify: flex-start)
   min-height: 100vh

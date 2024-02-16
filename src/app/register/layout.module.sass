@@ -1,9 +1,8 @@
+@import '../styles/mixins.sass'
+
 .main
   height:100%
   width: 100%
-  display: flex
-  flex-direction: column
-  align-items: flex-start
-  justify-content: center
+  @include flex($direction: column, $align: flex-start)
   gap: 35px
 

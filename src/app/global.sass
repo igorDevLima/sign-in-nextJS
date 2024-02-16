@@ -1,4 +1,5 @@
 @import './styles/variable.sass'
+@import './styles/mixins.sass'
 
 * 
 	box-sizing: border-box 
@@ -16,10 +17,7 @@ body
 	font-size: $font-size-base
 	padding: $spacing-small
 	min-height: 100vh
-	display: flex
-	flex-direction: column
-	align-items: center
-	justify-content: center
+	@include flex($direction: column)
 
     
 a 
@@ -31,8 +29,5 @@ h1
 
 form
 	width: 100%
-	display: flex
-	flex-direction: column
-	align-items: flex-start
-	justify-content: center
+	@include flex($direction: column, $align: flex-start)
 	gap: 30px
