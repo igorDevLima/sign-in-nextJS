@@ -13,8 +13,10 @@ export default function RootLayout({
 }>) {
   return (
     <main className={styles.main}>
-      <h1>Sign Up</h1>
-      {children}
+      <div className={styles.formContainer}>
+        <h1>Sign Up</h1>
+        {children}
+      </div>
     </main>
   );
 }
