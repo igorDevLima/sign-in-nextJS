@@ -8,15 +8,31 @@
 html,
 body 
 	max-width: 100vw 
-	overflow-x: hidden 
-
+	overflow-x: hidden
+	 
 body 
 	color: $font-text-color 
 	background: $color-dark
+	font-size: $font-size-base
+	padding: $spacing-small
+	min-height: 100vh
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+
     
 a 
 	color: inherit 
-	text-decoration: none 
+	text-decoration: none
+
+h1
+	font-size: $font-size-large 
 
 form
 	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	justify-content: center
+	gap: 30px
