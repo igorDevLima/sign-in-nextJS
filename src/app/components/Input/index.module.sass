@@ -6,7 +6,10 @@
     @include flex($direction: column, $align:flex-start,$justify:flex-start)
     gap: 2px
     color: rgba(255, 255, 255,0.95)
-    opacity: 0.7
+
+    label
+        @include typografy-input-label()
+        
 
 
     .inputContainer
@@ -24,10 +27,9 @@
             border-right: none
             border-top: none
             border-bottom: $border-width $border-style $border-color
-            color: $font-text-color
+            @include typografy-input()
             background: none
             padding-left: 40px
-            font-size: $font-size-small
 
             &:focus
                 outline: none

@@ -1,6 +1,33 @@
+@import './variable.sass'
+
 @mixin flex($direction:row , $align:center , $justify:center)
     display: flex
     flex-direction: $direction
     align-items: $align
     justify-content:  $justify
     
+@mixin typografy-title($fontSize: $font-size-large, $fontWeight: $font-weight-bold, $letterSpacing: $font-letter-spacing-wide )
+    font-size: $fontSize
+    font-weight: $fontWeight
+    letter-spacing: $letterSpacing
+
+@mixin typografy-button-label($fontSize: $font-size-small, $fontWeight: $font-weight-bold, $letterSpacing: $font-letter-spacing-normal )
+    font-size: $fontSize
+    font-weight: $fontWeight
+    letter-spacing: $letterSpacing
+    color: $font-text-color
+
+
+@mixin typografy-input-label($fontSize: $font-size-small, $fontWeight: $font-weight-semibold, $letterSpacing: $font-letter-spacing-normal )
+    font-size: $fontSize
+    font-weight: $fontWeight
+    letter-spacing: $letterSpacing
+    color: $font-text-color
+
+@mixin typografy-input($fontSize: $font-size-small, $fontWeight: $font-weight-regular, $letterSpacing: $font-letter-spacing-normal )
+    font-size: $fontSize
+    font-weight: $fontWeight
+    letter-spacing: $letterSpacing
+    color: $font-text-color
+
+
