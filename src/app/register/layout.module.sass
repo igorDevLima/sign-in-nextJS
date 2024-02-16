@@ -1,8 +1,26 @@
 @import '../styles/mixins.sass'
+@import '../styles/variable.sass'
 
 .main
   height:100%
   width: 100%
-  @include flex($direction: column, $align: flex-start)
-  gap: 35px
 
+  .formContainer
+    @include flex($direction: column, $align: flex-start)
+    gap: 12px
+
+@media screen and (min-width: $breakpoint-xl)
+
+  .main
+    gap: 25px
+    background-image: linear-gradient(black, black), url('../../../public/main-background.jpg')
+    background-size: cover
+    background-blend-mode: saturation
+    background-position-y: -100px
+    border-radius: $border-radius
+
+    .formContainer
+      height: 100%
+      background:$color-dark 
+      max-width: 350px
+      padding-right: 20px

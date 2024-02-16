@@ -14,14 +14,13 @@ body
 	max-width: 100vw 
 	overflow-x: hidden
 	 
-body 
+body
+	min-height: 100vh 
 	background: $color-dark
 	font-size: $font-size-base
 	@extend %same-text-color
 	padding: $spacing-small
-	min-height: 100vh
 	@include flex($direction: column)
-
     
 a 
 	@extend %same-text-color 
@@ -34,3 +33,21 @@ form
 	width: 100%
 	@include flex($direction: column, $align: flex-start)
 	gap: 30px
+
+@media screen and (min-width: $breakpoint-md)
+    
+	body
+		padding: $spacing-medium
+
+@media screen and (min-width: $breakpoint-lg)
+    
+	body
+		padding: $spacing-medium
+		@include flex($direction: column, $align: flex-start)
+
+
+@media screen and (min-width: $breakpoint-xl)
+    
+	body
+		padding: $spacing-large
+
