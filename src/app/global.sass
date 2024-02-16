@@ -1,6 +1,9 @@
 @import './styles/variable.sass'
 @import './styles/mixins.sass'
 
+%same-text-color
+	color: $font-text-color
+
 * 
 	box-sizing: border-box 
 	padding: 0 
@@ -12,16 +15,16 @@ body
 	overflow-x: hidden
 	 
 body 
-	color: $font-text-color 
 	background: $color-dark
 	font-size: $font-size-base
+	@extend %same-text-color
 	padding: $spacing-small
 	min-height: 100vh
 	@include flex($direction: column)
 
     
 a 
-	color: inherit 
+	@extend %same-text-color 
 	text-decoration: none
 
 h1

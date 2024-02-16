@@ -1,17 +1,20 @@
 @import "../../styles/variable.sass"
 @import "../../styles/mixins.sass"
+@import "../../styles/placeholder.sass"
 
 .container
     width: 100%
     @include flex($direction: column, $align:flex-start,$justify:flex-start)
     gap: 2px
     color: rgba(255, 255, 255,0.95)
+    @extend %transition 
+
+    &:hover
+        color: $color-blue-light
 
     label
         @include typografy-input-label()
-        
-
-
+   
     .inputContainer
         width: 100%
         @include flex( $justify:flex-start)
@@ -30,12 +33,13 @@
             @include typografy-input()
             background: none
             padding-left: 40px
+            @extend %transition
 
             &:focus
                 outline: none
-            
+                border-bottom-color: $color-blue-light
+
             &::placeholder
-                color: rgba(255, 255, 255,0.6)
-            
+                color: rgba(255, 255, 255,0.6)        
                 
             

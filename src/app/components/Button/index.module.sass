@@ -1,5 +1,6 @@
 @import  "../../styles/variable.sass"
 @import "../../styles/mixins.sass"
+@import "../../styles/placeholder.sass"
 
 .button
     width: 100%
@@ -10,3 +11,7 @@
     @include typografy-button-label()
     border: none
     cursor: pointer
+    @extend %transition
+
+    &:hover
+        background: $color-blue-light
