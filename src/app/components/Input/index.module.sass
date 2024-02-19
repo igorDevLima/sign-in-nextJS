@@ -7,23 +7,23 @@
     @include flex($direction: column, $align:flex-start,$justify:flex-start)
     gap: 2px
     color: rgba(255, 255, 255,0.95)
-    @extend %transition 
+    @extend %transition
 
     &:hover
         color: $color-blue-light
 
     label
         @include typografy-input-label()
-   
+
     .inputContainer
         width: 100%
         @include flex( $justify:flex-start)
-        
+
         .icon
             position: absolute
             font-size: 30px
 
-        input 
+        input
             width: 100%
             height: 50px
             border-left: none
@@ -42,14 +42,13 @@
             &::placeholder
                 color: rgba(255, 255, 255,0.6)
 
-
 @media screen and (min-width: $breakpoint-lg)
-  
-  .container
+
+.container
     .inputContainer
         .icon
             font-size: 25px
 
         input
-            padding-left: 35px 
-            height: 35px      
+            padding-left: 35px
+            height: 35px

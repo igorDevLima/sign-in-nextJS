@@ -4,26 +4,26 @@
 %same-text-color
 	color: $font-text-color
 
-* 
-	box-sizing: border-box 
-	padding: 0 
-	margin: 0 
+*
+	box-sizing: border-box
+	padding: 0
+	margin: 0
 
 html,
-body 
-	max-width: 100vw 
-	overflow-x: hidden
-	 
 body
-	min-height: 100vh 
+	max-width: 100vw
+	overflow-x: hidden
+
+body
+	min-height: 100vh
 	background: $color-dark
 	font-size: $font-size-base
 	@extend %same-text-color
 	padding: $spacing-small
 	@include flex($direction: column)
-    
-a 
-	@extend %same-text-color 
+
+a
+	@extend %same-text-color
 	text-decoration: none
 
 h1
@@ -35,19 +35,17 @@ form
 	gap: 30px
 
 @media screen and (min-width: $breakpoint-md)
-    
+
 	body
 		padding: $spacing-medium
 
 @media screen and (min-width: $breakpoint-lg)
-    
+
 	body
 		padding: $spacing-medium
 		@include flex($direction: column, $align: flex-start)
 
-
 @media screen and (min-width: $breakpoint-xl)
-    
+
 	body
 		padding: $spacing-large
-
